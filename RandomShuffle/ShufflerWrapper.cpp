@@ -1,5 +1,8 @@
 #include "ShufflerWrapper.h"
 
+/// <summary>
+/// Calculates and shows the result.
+/// </summary>
 void ShufflerWrapper::ShowResult()
 {
 	int major = -1, votes = 0;
@@ -41,6 +44,9 @@ void ShufflerWrapper::ShowResult()
 	std::cout << "\nMedian of lengths: " << median;
 }
 
+/// <summary>
+/// Deals the cards and records the result.
+/// </summary>
 void ShufflerWrapper::Distribution()
 {
 	Card prev = shuffler->operator()();
